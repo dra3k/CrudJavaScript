@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos App</title>
+    <!-- booswhatch-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+<!-- menu-->
+    <nav class="navbar navbar-light bg-light">
+      <a href="/" class="navbar-brand">
+      app</a>
+      </nav>
+      <div class="container">
+      <div id="App" class="row pt-5">
+        <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <H1>AGREGA PRODUCTO</H1>
+                    </div>
+                    <div class="card-body">
+                        <form id="product-form">
+                            <div class="form-group">
+                                <input type="text" id="nombre" placeholder="nombre del producto"
+                                class="form-control">
+                                </input>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" step="0.01" id="precio" placeholder="precio del producto"
+                                class="form-control">
+                                </imput>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="anio" min="2015" value="2020" max="2021" placeholder="año del producto"
+                                class="form-control">
+                                </input>
+                            </div>
+                            <input type="submit" value="guardar" class="btn btn-primary btn-block">
+                                </input>
+                        </form>
+                        
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-md-8">
+            <div id="lista-prod">
+                
+            </div>
+        </div>
+      </div>
+      </div>
+
+</head>
+<body>
+   <script  src="App.js"></script>
+</body>
+</html>
+
